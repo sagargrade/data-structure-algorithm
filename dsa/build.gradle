@@ -4,8 +4,11 @@ plugins {
 
 group = 'edu.self.dsa'
 version = '1.0-SNAPSHOT'
-sourceCompatibility = '25'
-targetCompatibility = '25'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
 
 repositories {
     mavenCentral()
@@ -19,3 +22,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
